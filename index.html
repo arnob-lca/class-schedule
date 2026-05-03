@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-shculade</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <section class="shcedule-table">
+        <div class="container">
+
+            <!--logout bar -->
+            <div class="logout-bar">
+                <span id="logged-user"></span>
+                <button onclick="logout()" class="logout-btn">
+                    <i class="bi bi-box-arrow-right"></i> logout
+                </button>
+            </div>
+
+            <div class="shcedule-top-title">
+                <div class="shcedule-top-title-left">
+                    <h6>learn computer academy</h6>
+                    <h2>CLASS SCHEDULE</h2>
+                </div>
+                <div class="shcedule-top-title-right">
+                    <h6>today</h6>
+                    <h2 id="newdate"></h2>
+                </div>
+            </div>
+
+            <div class="our-all-capacity">
+                <div class="capacity-block">
+                    <h3>Enrollment Ratio</h3>
+                    <h2>18</h2>
+                </div>
+                <div class="capacity-block">
+                    <h3>available capacity</h3>
+                    <h2>76</h2>
+                </div>
+                <div class="capacity-block">
+                    <h3>Batch Density</h3>
+                    <h2>37%</h2>
+                </div>
+                <div class="capacity-block">
+                    <h3>Total Weekly Classes</h3>
+                    <h2>24</h2>
+                </div>
+            </div>
+
+            <div class="schedule-table-main">
+                <div class="schedule-table-first-wrapper">
+                    <div class="weekly-student-wrapper">
+                        <div class="weekly-student-title">
+                            <div class="weekly-student-block-left">
+                                <h3>weekly schedule</h3>
+                            </div>
+                            <div class="weekly-student-timing-right">
+                                <ul>
+                                    <li><i class="pulse"></i>
+                                        <p id="newtime"></p>
+                                    </li>
+                                    <li><i class="pulse"></i>
+                                        <p id="newday"></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="student-timing-list">
+                            <p>10:30 - 12:30</p>
+                            <p>12:30 - 02:30</p>
+                            <p>04:00 - 06:00</p>
+                            <p>06:00 - 08:00</p>
+                        </div>
+                    </div>
+
+                    <div class="shcedule-main-table-row">
+                        <div class="shcedule-table-row">
+                            <div class="table-first-collum"><p>monday</p></div>
+                            <div class="table-second-collum">
+                                <h5>soumik dutta</h5>
+                                <h5>anish gharami</h5>
+                                <div class="mouse-name"><h5>pritha seal</h5><i class="bi bi-mouse2"></i></div>
+                            </div>
+                            <div class="table-second-collum"><h5>arnob biswas</h5></div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>arnob roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>rupanjana roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>debagnik dey</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>somen biswas</h5>
+                            </div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>samrit paul</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>diya das</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>indrani debnath</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>bibrato sarkar</h5>
+                            </div>
+                        </div>
+                        <div class="shcedule-table-row">
+                            <div class="table-first-collum"><p>tuesday</p></div>
+                            <div class="table-second-collum">
+                                <h5>soumik dutta</h5>
+                                <h5>anish gharami</h5>
+                                <div class="mouse-name"><h5>pritha seal</h5><i class="bi bi-mouse2"></i></div>
+                            </div>
+                            <div class="table-second-collum"><h5>arnob biswas</h5></div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>arnob roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>rupanjana roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>debagnik dey</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>somen biswas</h5>
+                            </div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>samrit paul</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>diya das</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>indrani debnath</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>bibrato sarkar</h5>
+                            </div>
+                        </div>
+                        <div class="shcedule-table-row">
+                            <div class="table-first-collum"><p>wednesday</p></div>
+                            <div class="table-second-collum">
+                                <h5>soumik dutta</h5>
+                                <h5>anish gharami</h5>
+                                <div class="mouse-name"><h5>pritha seal</h5><i class="bi bi-mouse2"></i></div>
+                            </div>
+                            <div class="table-second-collum"><h5>arnob biswas</h5></div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>arnob roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>rupanjana roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>debagnik dey</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>somen biswas</h5>
+                            </div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>samrit paul</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>diya das</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>indrani debnath</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>bibrato sarkar</h5>
+                            </div>
+                        </div>
+                        <div class="shcedule-table-row">
+                            <div class="table-first-collum"><p>thursday</p></div>
+                            <div class="table-second-collum">
+                                <h5>soumik dutta</h5>
+                                <h5>anish gharami</h5>
+                                <div class="mouse-name"><h5>pritha seal</h5><i class="bi bi-mouse2"></i></div>
+                            </div>
+                            <div class="table-second-collum"><h5>arnob biswas</h5></div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>arnob roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>rupanjana roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>debagnik dey</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>somen biswas</h5>
+                            </div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>samrit paul</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>diya das</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>indrani debnath</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>bibrato sarkar</h5>
+                            </div>
+                        </div>
+                        <div class="shcedule-table-row">
+                            <div class="table-first-collum"><p>friday</p></div>
+                            <div class="table-second-collum">
+                                <h5>soumik dutta</h5>
+                                <h5>anish gharami</h5>
+                                <div class="mouse-name"><h5>pritha seal</h5><i class="bi bi-mouse2"></i></div>
+                            </div>
+                            <div class="table-second-collum"><h5>arnob biswas</h5></div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>arnob roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>rupanjana roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>debagnik dey</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>somen biswas</h5>
+                            </div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>samrit paul</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>diya das</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>indrani debnath</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>bibrato sarkar</h5>
+                            </div>
+                        </div>
+                        <div class="shcedule-table-row">
+                            <div class="table-first-collum"><p>saturday</p></div>
+                            <div class="table-second-collum">
+                                <h5>soumik dutta</h5>
+                                <h5>anish gharami</h5>
+                                <div class="mouse-name"><h5>pritha seal</h5><i class="bi bi-mouse2"></i></div>
+                            </div>
+                            <div class="table-second-collum"><h5>arnob biswas</h5></div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>arnob roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>rupanjana roy</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>debagnik dey</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>somen biswas</h5>
+                            </div>
+                            <div class="table-second-collum">
+                                <div class="mouse-name"><h5>samrit paul</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>diya das</h5><i class="bi bi-mouse2"></i></div>
+                                <div class="mouse-name"><h5>indrani debnath</h5><i class="bi bi-mouse2"></i></div>
+                                <h5>bibrato sarkar</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-table-second-wrapper">
+                    <div class="lt-wrap">
+                        <p class="lt-label">Longevity Tracking</p>
+                        <div class="student-list" id="rows"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- cursor -->
+        <div id="cursor-dot"></div>
+        <div id="cursor-ring"></div>
+    </section>
+
+    <!-- login check script -->
+    <script>
+        const loggedIn = sessionStorage.getItem('loggedIn');
+
+        if (!loggedIn) {
+            window.location.href = "./user.html";
+        }
+
+        const savedUser = sessionStorage.getItem('username');
+        
+
+        function logout() {
+            sessionStorage.removeItem('loggedIn');
+            sessionStorage.removeItem('username');
+            window.location.href = "./user.html";
+        }
+    </script>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
